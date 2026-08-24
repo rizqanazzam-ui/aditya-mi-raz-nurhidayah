@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#18181b" />
+  <meta name="description" content="Sebuah ucapan ulang tahun dan sepucuk surat untuk Adit." />
+  <meta property="og:title" content="UNTUK ADITYA TERSAYANG" />
+  <meta property="og:description" content="Ada sesuatu yang dibuat khusus untuk hari ulang tahunmu." />
+  <meta property="og:image" content="./assets/aditya1.jpg" />
+  <meta property="og:type" content="website" />
+  <title>UNTUK ADITYA TERSAYANG</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Source+Serif+4:ital,wght@0,350;0,400;0,600;1,350;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body class="is-locked">
+  <a class="skip-link" href="#main-content">Lewati pembuka</a>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scrollProgress"></span>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__orb ambient__orb--one"></span>
+    <span class="ambient__orb ambient__orb--two"></span>
+    <span class="ambient__grain"></span>
+  </div>
+
+  <section class="intro" id="intro" aria-labelledby="introTitle">
+    <div class="intro__topline">
+      <span>Pesan pribadi</span>
+      <span>24 · 08</span>
+    </div>
+
+    <div class="intro__layout">
+      <div class="intro__portrait" aria-hidden="true">
+        <span class="portrait-card portrait-card--back"></span>
+        <span class="portrait-card portrait-card--middle"></span>
+        <figure class="portrait-card portrait-card--front">
+          <img src="./assets/aditya1.jpg" width="720" height="720" alt="Foto Aditya 1" fetchpriority="high" />
+          <figcaption>To my beloved</figcaption>
+        </figure>
+        <svg class="intro__scribble" viewBox="0 0 96 78" fill="none">
+          <path d="M7 65C24 11 63 3 86 18C103 29 76 54 55 38C40 27 51 11 65 7" />
+        </svg>
+      </div>
+
+      <div class="intro__copy">
+        <p class="eyebrow">Untuk Adit</p>
+        <h1 id="introTitle">Ada sesuatu<br />untuk <em>Adit.</em></h1>
+        <p class="intro__lead">
+          Nggak mewah, tapi dibuat pelan-pelan dan sepenuh hati.
+        </p>
+
+        <div class="intro__actions">
+          <button class="button button--primary" id="openExperience" type="button">
+            <span>Buka sekarang</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
+          <button class="button button--quiet" id="notReady" type="button">
+            Pelan-pelan dulu
+          </button>
+        </div>
+
+        <p class="intro__reassurance" id="reassurance" aria-live="polite"></p>
+        <p class="intro__audio-note">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 18V5l10-2v13" />
+            <circle cx="6" cy="18" r="3" />
+            <circle cx="16" cy="16" r="3" />
+          </svg>
+          Paling pas dibuka dengan suara
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#hero" aria-label="Kembali ke bagian awal">
+      <span>24.08</span>
+      <span class="brand__divider" aria-hidden="true"></span>
+      <span>untuk Adit</span>
+    </a>
+
+    <button class="sound-toggle" id="soundToggle" type="button" aria-label="Putar musik" aria-pressed="false">
+      <span class="sound-toggle__bars" aria-hidden="true">
+        <i></i><i></i><i></i>
+      </span>
+      <span id="soundLabel">Musik</span>
+    </button>
+  </header>
+
+  <main id="main-content" aria-hidden="true" inert>
+    <section class="hero" id="hero" tabindex="-1" aria-labelledby="heroTitle">
+      <div class="hero__index" aria-hidden="true">
+        <span>01</span>
+        <span>04</span>
+      </div>
+
+      <div class="hero__copy reveal">
+        <p class="eyebrow eyebrow--light">Hari ini tentang kamu</p>
+        <h2 id="heroTitle"><em>ADITYA</em><br />MI'RAZ, Nurhidayah.</h2>
+        <p class="hero__date">Dua Puluh Empat Agustus — hari yang akan selalu aku ingat.</p>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="hero__halo" aria-hidden="true"></div>
+        <figure class="hero__photo">
+          <img src="./assets/aditya2.jpg" width="720" height="720" alt="Foto Adit 2" />
+          <figcaption>
+            <span>Adit</span>
+            <span>24 / 08</span>
+          </figcaption>
+        </figure>
+        <span class="hero__note" aria-hidden="true">a little note for you</span>
+      </div>
+
+      <a class="scroll-cue" href="#prologue">
+        <span>Mulai cerita</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 5v14M6 13l6 6 6-6" />
+        </svg>
+      </a>
+    </section>
+
+    <section class="prologue section" id="prologue" aria-labelledby="prologueTitle">
+      <div class="section__number reveal" aria-hidden="true">02</div>
+      <div class="prologue__content">
+        <p class="eyebrow reveal">Satu hari, banyak doa baik</p>
+        <h2 class="display-title reveal" id="prologueTitle">
+          Semoga hidup selalu memperlakukanmu dengan
+          <em>Baik.</em>
+        </h2>
+        <div class="prologue__grid">
+          <p class="prologue__lead reveal">
+            Ada orang yang hadir, dan meninggalkan pelajaran yang
+            bertahan lama.
+          </p>
+          <p class="prologue__body reveal">
+            Terima kasih atas tiap pelajaran yang diberikan. Untuk
+            setiap cerita, tawa, salah, benar, dan hal-hal kecil yang akhirnya
+            membuat aku tumbuh jadi pribadi yang lebih baik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portrait-break" aria-label="Potret dan pesan singkat">
+      <div class="portrait-break__marquee" aria-hidden="true">
+        <span>I will always love you · I will always love you · I will always love you ·&nbsp;</span>
+        <span>I will always love you · I will always love you · I will always love you ·&nbsp;</span>
+      </div>
+      <div class="portrait-break__layout">
+        <figure class="portrait-break__photo reveal">
+          <img src="./assets/aditya3.jpg" width="720" height="720" loading="lazy" alt="Foto Aditya 3" />
+          <span class="portrait-break__tape" aria-hidden="true"></span>
+        </figure>
+        <blockquote class="reveal">
+          <svg viewBox="0 0 56 42" aria-hidden="true">
+            <path
+              d="M2 42V26C2 8 10 0 27 0v9c-8 1-12 5-13 12h11v21H2Zm29 0V26C31 8 39 0 56 0v9c-8 1-12 5-13 12h11v21H31Z" />
+          </svg>
+          <p>
+            “A man who gives many valuable lessons.”
+          </p>
+          <cite>— dari seseorang yang selalu menyayangimu</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="wishes section" aria-labelledby="wishesTitle">
+      <div class="section__heading">
+        <div>
+          <p class="eyebrow reveal">Tiga hal untuk kedepannya</p>
+          <h2 class="display-title reveal" id="wishesTitle">
+            Lebih banyak <em>yang baik.</em>
+          </h2>
+        </div>
+        <p class="section__aside reveal">
+          Bukan cuma hari ini—semoga doa-doa ini ikut menemani langkahmu
+          setelahnya.
+        </p>
+      </div>
+
+      <div class="wishes__grid">
+        <article class="wish-card reveal">
+          <div class="wish-card__top">
+            <span>01</span>
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M16 27S5 21 5 12.5A6.5 6.5 0 0 1 16 7.8a6.5 6.5 0 0 1 11 4.7C27 21 16 27 16 27Z" />
+            </svg>
+          </div>
+          <h3>Bahagia</h3>
+          <p>
+            Semoga senyummu selalu terjaga dan ada banyak alasan baru untuk
+            tertawa.
+          </p>
+        </article>
+
+        <article class="wish-card wish-card--accent reveal">
+          <div class="wish-card__top">
+            <span>02</span>
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M16 3v26M3 16h26M7 7l18 18M25 7 7 25" />
+            </svg>
+          </div>
+          <h3>Bertumbuh</h3>
+          <p>
+            Semoga harapan yang selama ini kamu simpan, pelan-pelan bisa
+            kamu raih.
+          </p>
+        </article>
+
+        <article class="wish-card reveal">
+          <div class="wish-card__top">
+            <span>03</span>
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path
+                d="M16 4c2.5 6.4 5.6 9.5 12 12-6.4 2.5-9.5 5.6-12 12-2.5-6.4-5.6-9.5-12-12 6.4-2.5 9.5-5.6 12-12Z" />
+            </svg>
+          </div>
+          <h3>Dikelilingi yang baik</h3>
+          <p>
+            Semoga kamu selalu bertemu orang-orang tulus dan hal-hal yang
+            membuat hati tenang.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="letter-section" id="letter" aria-labelledby="letterTitle">
+      <div class="letter-section__intro reveal">
+        <p class="eyebrow eyebrow--light">03 — sepucuk surat</p>
+        <h2 id="letterTitle">Untuk Adit,<br /><em>dengan tulus.</em></h2>
+        <p>
+          Kalau sudah siap, baca pelan-pelan. Nggak perlu buru-buru sampai
+          halaman terakhir.
+        </p>
+      </div>
+
+      <article class="letter reveal">
+        <div class="letter__meta">
+          <span>Ditulis untuk</span>
+          <strong>Adit</strong>
+          <span>24 Agustus · 23.41</span>
+        </div>
+
+        <div class="letter__body">
+          <p class="letter__salutation">Hai, Sayang.</p>
+
+          <p>
+            Sayang bsok aku dah balik ke jkt,maap ya sayang aku belum bisa menjadi yang terbaik buat kamu aku jg masih
+            sering buat salah dimata kamuu.aku jg gk tau setelah perjalanan ini aku jalanin idupnya gimanaa,aku bahkan
+            blum pernah bisa liat orang yang aku cintai secara langsung even itu hanya sebatas sekilas aja.tapi semoga
+            aku bisa cepat berdamai sayang dengan hidup akuu.aku harap kamu juga bisa bahagia selalu dan dikelilingi
+            dengan orang yang selalu dukung kamu. Kalau nnti kamu juga butuh apa-apa dari aku atau apapun itu aku bakal
+            tetap
+            sedia kok.
+          </p>
+
+          <p>
+            Untuk selama ini dan sampai saat ini aku ucapin terimakasih sayang atas segalanya. Aku bilang gini bukan
+            karena aku mau lost contact lagi. malahan aku mau kita bisa contactkan hingga hari nanti,aku bilang
+            gini karena aku yang udh mau balik tapi belum sempat liat orang yang aku sayang,orang yang aku cinta,orang
+            yang aku kangeninn selama inii.
+          </p>
+
+          <p class="letter__highlight">
+            Sumpah demi tuhan YANGG aku beneran cinta sama kamu
+          </p>
+          <p class="letter__highlight">
+            LOVE U TILL BRAND NEW DAY…❤️❤️
+          </p>
+        </div>
+
+        <footer class="letter__signature">
+          <span>dengan sepenuh hati,</span>
+          <strong>RIZQAN AZZAM. MH</strong>
+        </footer>
+
+        <div class="letter__stamp" aria-hidden="true">
+          <span>24</span>
+          <span>AGT</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="closing" aria-labelledby="closingTitle">
+      <div class="closing__index" aria-hidden="true">20</div>
+      <div class="closing__content reveal">
+        <p class="eyebrow eyebrow--light">Satu kalimat terakhir</p>
+        <h2 id="closingTitle">
+          Semoga harimu selalu dipenuhi <em>kebahagiaan.</em>
+        </h2>
+        <p>LOVE UUU SAYANGKU.</p>
+        <a class="button button--light" href="#hero">
+          <span>Baca dari awal</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7" />
+          </svg>
+        </a>
+      </div>
+      <div class="closing__date" aria-hidden="true">24 · 08</div>
+    </section>
+  </main>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="https://mp3tourl.com/audio/1780939741571-eaa46f8b-db73-4d56-b057-bd7b6367f20f.mp3" type="audio/mpeg" />
+  </audio>
+
+  <noscript>
+    <div class="noscript">
+      Aktifkan JavaScript untuk membuka pengalaman ini. Suratnya tetap dibuat
+      khusus untuk Adit.
+    </div>
+  </noscript>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
